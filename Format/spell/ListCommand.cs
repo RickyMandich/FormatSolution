@@ -37,6 +37,7 @@ internal class ListCommand : Command
             {
                 Console.WriteLine($"Indice {index} fuori dai limiti (0 - {SpellClass.spells.Count - 1})");
                 return;
+
             }
             var spell = SpellClass.spells[index];
             if (parseResult.GetValue(onlyNameOption))
