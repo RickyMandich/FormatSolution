@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Rianimare Morti",
+    "Level": 5,
+    "School": "necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "contatto",
+    "Components": "V, S, M (un diamante del valore di almeno 500 mo, che l\u0027incantesimo consuma)",
+    "Duration": "Istantaneo",
+    "Description": "L\u0027incantatore riporta in vita una creatura morta da lui toccata, purch\u00E9 non sia morta da pi\u00F9 di 10 giorni. Se l\u0027anima della creatura \u00E8 consenziente ed \u00E8 libera di riunirsi al corpo, la creatura torna in vita con 1 punto ferita.\\nQuesto incantesimo neutralizza inoltre qualsiasi veleno e cura le malattie non magiche che influenzavano la creatura al momento della morte. Tuttavia, questo incantesimo non rimuove le malattie magiche, le maledizioni e le altre afflizioni analoghe; se non vengono rimossi prima del lancio dell\u0027incantesimo, il bersaglio ne sar\u00E0 afflitto quando torner\u00E0 in vita. Questo incantesimo non pu\u00F2 riportare in vita una creatura non morta.\\nQuesto incantesimo richiude tutte le ferite mortali, ma non ripristina le parti del corpo mancanti. Se una creatura \u00E8 priva di parti del corpo o di organi essenziali per la sua sopravvivenza (come per esempio la testa), l\u0027incantesimo fallisce automaticamente.\\nIl ritorno dalla morte \u00E8 una vera e propria ordalia. Il bersaglio subisce una penalit\u00E0 di -4 a tutti i tiri per colpire, ai tiri salvezza e alle prove di caratteristica. Ogni volta che il bersaglio completa un riposo lungo, la penalit\u00E0 viene ridotta di 1 finch\u00E9 non sparisce del tutto.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Chierico"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  }
+]

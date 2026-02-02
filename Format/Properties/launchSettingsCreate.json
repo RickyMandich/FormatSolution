@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Format": {
+      "commandName": "Project",
+      "commandLineArgs": "spell list"
+    }
+  }
+}
