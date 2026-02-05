@@ -1,4 +1,7 @@
 ﻿using Format.utils;
+using System;
+using System.Reflection.Emit;
+using System.Xml.Linq;
 
 namespace Format.spell;
 
@@ -15,7 +18,7 @@ public class SpellClass
     public string HigherLevels { get; set; }
     public string[] Classes { get; set; }
     public string Sorgente { get; set; }
-    static public SpellList spells { get; set; }
+    static public SpellList spells { get; set; } = new SpellList();
 
     /**
      * @param name il nome dell'incantesimo
@@ -48,6 +51,17 @@ public class SpellClass
 
     public SpellClass()
     {
+        this.Name = "name";
+        this.Level = 0;
+        this.School = "school";
+        this.CastingTime = "castingTime";
+        this.Range = "range";
+        this.Components = "components";
+        this.Duration = "duration";
+        this.Description = "description";
+        this.HigherLevels = "higherLevels";
+        this.Classes = ["classes"];
+        this.Sorgente = "sorgente";
     }
 
     /**

@@ -30,9 +30,10 @@ internal class ListCommand : Command
 
     private async Task CommandListHandler(ParseResult parseResult, CancellationToken cancellationToken)
     {
+        MyConsole.WriteDebugLine("eseguo list");
         if (parseResult.GetValue(indexOption) is int)
         {
-            int index = parseResult.GetValue(indexOption).Value;
+            int index = parseResult.GetValue(indexOption)!.Value;
             if (index < 0 || index >= SpellClass.spells.Count)
             {
                 Console.WriteLine($"Indice {index} fuori dai limiti (0 - {SpellClass.spells.Count - 1})");

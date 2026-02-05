@@ -1,5 +1,5 @@
-﻿using System.CommandLine;
-using System.CommandLine.Parsing;
+﻿using Format.utils;
+using System.IO;
 
 namespace Format;
 
@@ -7,14 +7,25 @@ internal class Program
 {
     static async Task<int> Main(string[] args)
     {
-        utils.Settings.Initialize();
-        utils.Settings.AddIfMissing("storage", "C:\\Users\\RickyMandich\\PROJECT\\FormatSolution\\Format\\spell.json");
-        Console.WriteLine($"commandline args:\t{string.Join(" ", args)}");
+        // Rileviamo il debug flag immediatamente per influenzare i log di inizializzazione
+        if (args.Contains("--debug") || args.Contains("-d"))
+        {
+            Settings.DebugOverride = true;
+        }
+
+        // Otteniamo il percorso assoluto della cartella del progetto risalendo dalla cartella bin
+        string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+        string projectDir = Path.GetFullPath(Path.Combine(baseDir, "..", "..", ".."));
+
+        Settings.BaseDir = projectDir;
+        Settings.Initialize("format.config");
+        Settings.AddPathOptionIfMissing("storage", Path.Combine(projectDir, "spell.json"));
+        MyConsole.WriteDebugLine($"commandline args:\t{string.Join(" ", args)}");
         spell.SpellClass.spells = new();
-
+        Settings.Set("debug", false);
         var root = new RootCommand();
-        var result = root.Parse(args);
+        var parseResult = root.Parse(args);
+        return await parseResult.InvokeAsync();
 
-        return await result.InvokeAsync();
     }
 }

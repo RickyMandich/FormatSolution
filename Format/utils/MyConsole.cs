@@ -2,12 +2,22 @@
 
 internal class MyConsole
 {
-    public static void WriteLine(string message, ConsoleColor color)
+    public static void WriteLine(string message, ConsoleColor color = ConsoleColor.Blue)
     {
         var previousColor = Console.ForegroundColor;
         Console.ForegroundColor = color;
         Console.WriteLine(message);
         Console.ForegroundColor = previousColor;
+    }
+
+    public static void WriteDebugLine(string message, ConsoleColor color = ConsoleColor.DarkGray)
+    {
+        if (Settings.EnvBoolOption("debug") ?? false)
+        {
+            WriteLine("=======================START=====DEBUG==================");
+            WriteLine(message, color);
+            WriteLine("=======================END=====DEBUG==================");
+        }
     }
 
     public static string ReadString(string prompt, ConsoleColor color = ConsoleColor.Blue)

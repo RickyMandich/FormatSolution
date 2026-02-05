@@ -118,17 +118,17 @@ namespace Format.spell
 
         private async Task CommandCreateHandler(ParseResult parseResult, CancellationToken cancellationToken)
         {
-            var name = parseResult.GetValue(nameOption);
+            var name = parseResult.GetValue(nameOption) ?? "";
             var level = parseResult.GetValue(levelOption);
-            var school = parseResult.GetValue(schoolOption);
-            var castingTime = parseResult.GetValue(castingTimeOption);
-            var range = parseResult.GetValue(rangeOption);
-            var components = parseResult.GetValue(componentsOption);
-            var duration = parseResult.GetValue(durationOption);
-            var description = parseResult.GetValue(descriptionOption);
-            var higherLevels = parseResult.GetValue(higherLevelOption);
-            var classes = parseResult.GetValue(classesOption);
-            var source = parseResult.GetValue(sourceOption);
+            var school = parseResult.GetValue(schoolOption) ?? "";
+            var castingTime = parseResult.GetValue(castingTimeOption) ?? "";
+            var range = parseResult.GetValue(rangeOption) ?? "";
+            var components = parseResult.GetValue(componentsOption) ?? "";
+            var duration = parseResult.GetValue(durationOption) ?? "";
+            var description = parseResult.GetValue(descriptionOption) ?? "";
+            var higherLevels = parseResult.GetValue(higherLevelOption) ?? "";
+            var classes = parseResult.GetValue(classesOption) ?? [];
+            var source = parseResult.GetValue(sourceOption) ?? "";
 
             // Se TUTTE le opzioni obbligatorie sono piene, passa (modalità opzioni)
             bool allRequiredFilled = !string.IsNullOrEmpty(name) &&
@@ -141,7 +141,7 @@ namespace Format.spell
             if (!allRequiredFilled)
             {
                 MyConsole.WriteLine("Opzioni insufficienti, entro in modalità interattiva", ConsoleColor.Yellow);
-                SpellClass.spells.Add(spell = new SpellClass());
+                SpellClass.spells.Add(spell = new SpellClass(""));
             }
             else
             {

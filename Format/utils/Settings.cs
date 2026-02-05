@@ -4,13 +4,17 @@ namespace Format.utils;
 
 internal class Settings
 {
+    private static string path = "format.config";
     private static Dictionary<string, string> settings = new();
 
-    public static bool Initialize()
+    public static string BaseDir { get; set; } = AppDomain.CurrentDomain.BaseDirectory;
+
+    public static bool Initialize(string config = "format.config")
     {
+        path = Path.IsPathRooted(config) ? config : Path.GetFullPath(Path.Combine(BaseDir, config));
         try
         {
-            var lines = File.ReadAllLines("format.config");
+            var lines = File.ReadAllLines(path);
             foreach (var line in lines)
             {
                 if (line.StartsWith("#") || string.IsNullOrWhiteSpace(line))
@@ -31,6 +35,15 @@ internal class Settings
         }
     }
 
+    public static void AddPathOptionIfMissing(string key, string p)
+    {
+        if (Path.IsPathRooted(p) && p.StartsWith(BaseDir))
+        {
+            p = Path.GetRelativePath(BaseDir, p);
+        }
+        AddIfMissing(key, p);
+    }
+
     public static void AddIfMissing(string key, string value)
     {
         if (!settings.ContainsKey(key))
@@ -38,6 +51,34 @@ internal class Settings
             settings[key] = value;
             Save();
         }
+    }
+
+    public static string EnvPathOption(string key, string defaultVaule = "")
+    {
+        if (settings.ContainsKey(key))
+        {
+            string p = settings[key];
+            if (!Path.IsPathRooted(p))
+            {
+                return Path.GetFullPath(Path.Combine(BaseDir, p));
+            }
+            return p;
+        }
+        return defaultVaule;
+    }
+
+    public static bool? DebugOverride { get; set; } = null;
+
+    public static bool? EnvBoolOption(string key, bool? defaultValue = null) {
+        if (key == "debug" && DebugOverride.HasValue)
+        {
+            return DebugOverride.Value;
+        }
+        if (bool.TryParse(env(key), out bool value))
+        {
+            return value;
+        }
+        return defaultValue;
     }
 
     public static string env(string key, string defaultValue = "")
@@ -49,6 +90,18 @@ internal class Settings
         return defaultValue;
     }
 
+    public static bool Set(string key, bool value)
+    {
+        return Set(key, value.ToString());
+    }
+
+    public static bool Set(string key, string value)
+    {
+        settings[key] = value;
+        Save();
+        return true;
+    }
+
     public static bool Save()
     {
         try
@@ -58,6 +111,7 @@ internal class Settings
             {
                 sb.AppendLine($"{kvp.Key}={kvp.Value}");
             }
+            File.WriteAllText(path, sb.ToString());
             return true;
 
         }

@@ -2,7 +2,11 @@
   "profiles": {
     "Format": {
       "commandName": "Project",
-      "commandLineArgs": "spell list"
+      "commandLineArgs": "spell list -n"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
   }
 }
