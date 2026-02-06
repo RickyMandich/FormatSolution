@@ -42,4 +42,16 @@ internal class MyConsole
         }
         return result;
     }
+
+    public static bool ReadBool(string prompt, ConsoleColor color = ConsoleColor.Blue)
+    {
+        WriteLine(prompt, color);
+        var input = Console.ReadLine();
+        if (!bool.TryParse(input, out bool result))
+        {
+            WriteLine("inserisci un valore booleano", ConsoleColor.Red);
+            return ReadBool(prompt, color);
+        }
+        return result;
+    }
 }

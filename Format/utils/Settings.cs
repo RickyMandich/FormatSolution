@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Runtime.InteropServices;
 
 namespace Format.utils;
 
@@ -11,7 +12,7 @@ internal class Settings
 
     public static bool Initialize(string config = "format.config")
     {
-        path = Path.IsPathRooted(config) ? config : Path.GetFullPath(Path.Combine(BaseDir, config));
+        path = Path.IsPathRooted(config) ? config : Path.GetFullPath(Path.Combine(BaseDir, "data", config));
         try
         {
             var lines = File.ReadAllLines(path);
@@ -39,7 +40,7 @@ internal class Settings
     {
         if (Path.IsPathRooted(p) && p.StartsWith(BaseDir))
         {
-            p = Path.GetRelativePath(BaseDir, p);
+            p = Path.GetRelativePath(BaseDir, p).Replace('\\', '/');
         }
         AddIfMissing(key, p);
     }
@@ -62,9 +63,34 @@ internal class Settings
             {
                 return Path.GetFullPath(Path.Combine(BaseDir, p));
             }
-            return p;
+            return NormalizeCrossPlatformPath(p);
         }
         return defaultVaule;
+    }
+
+    private static string NormalizeCrossPlatformPath(string p)
+    {
+        if (string.IsNullOrEmpty(p)) return p;
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            // Se siamo su Windows e il path sembra uno stile Linux WSL (/mnt/c/...)
+            if (p.StartsWith("/mnt/") && p.Length >= 7 && p[6] == '/')
+            {
+                char drive = p[5];
+                return $"{drive}:{p.Substring(6).Replace('/', '\\')}";
+            }
+        }
+        else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+        {
+            // Se siamo su Linux e il path sembra uno stile Windows (C:\...)
+            if (p.Length >= 3 && p[1] == ':' && (p[2] == '\\' || p[2] == '/'))
+            {
+                char drive = char.ToLower(p[0]);
+                return $"/mnt/{drive}{p.Substring(2).Replace('\\', '/')}";
+            }
+        }
+        return p;
     }
 
     public static bool? DebugOverride { get; set; } = null;

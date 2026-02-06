@@ -9,9 +9,10 @@ namespace Format.spell
     {
         public SpellCommand() : base("spell", "il comando per gestire gli incantesimi")
         {
-            this.Subcommands.Add(new CreateCommand());
-            this.Subcommands.Add(new ListCommand());
-            this.Subcommands.Add(new RemoveCommand());
+            Subcommands.Add(new CreateCommand());
+            Subcommands.Add(new ListCommand());
+            Subcommands.Add(new RemoveCommand());
+            Subcommands.Add(new WriteFileCommand());
         }
     }
 }

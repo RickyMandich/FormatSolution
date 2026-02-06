@@ -14,5 +14,21 @@
       "Chierico"
     ],
     "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Test",
+    "Level": 0,
+    "School": "Test",
+    "CastingTime": "Test",
+    "Range": "Test",
+    "Components": "Test",
+    "Duration": "Test",
+    "Description": "Test\ntest2",
+    "HigherLevels": "",
+    "Classes": [
+      "TestClass1",
+      "TestClass2"
+    ],
+    "Sorgente": ""
   }
 ]

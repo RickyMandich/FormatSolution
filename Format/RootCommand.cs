@@ -17,17 +17,6 @@ namespace Format
                     DefaultValueFactory = a => false
                 }
             );
-
-            SetAction(CommandHandler);
-        }
-
-        private async Task CommandHandler(ParseResult parseResult, CancellationToken cancellationToken)
-        {
-            var debug = parseResult.GetValue(debugOption);
-            // Non salviamo più permanentemente nel config, usiamo l'override rilevato in Main
-            Settings.DebugOverride = debug;
-            MyConsole.WriteDebugLine("sono nell'handler di rootCommand", ConsoleColor.Yellow);
-            MyConsole.WriteLine(debug ? "Debug Mode: ON" : "Debug Mode: OFF", ConsoleColor.Blue);
         }
     }
 }

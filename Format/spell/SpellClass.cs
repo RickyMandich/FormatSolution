@@ -161,13 +161,58 @@ public class SpellClass
         return ret;
     }
 
-    public static string ToCamelCase(string originalName)
+    public int PrintToFile(string outputDirectory = "", bool forceOverwrite = false)
     {
-        originalName = originalName.Replace("'", "");
-        if (string.IsNullOrWhiteSpace(originalName))
+        if (string.IsNullOrEmpty(outputDirectory))
+        {
+            outputDirectory = Settings.EnvPathOption("OUTPUT_DIRECTORY");
+        }
+        var classes = new List<string>(Classes)
+        {
+            "tutti"
+        };
+        int count = 0;
+        foreach (string clas in classes)
+        {
+            string dirFullPath = Path.Combine(outputDirectory, clas);
+            Directory.CreateDirectory(dirFullPath);
+            string fullPath = Path.Combine(dirFullPath, ToKebabCase());
+            fullPath = Path.ChangeExtension(fullPath, ".md");
+            bool write = false;
+            if (forceOverwrite || !File.Exists(fullPath))
+            {
+                write = true;
+            }
+            else
+            {
+                MyConsole.WriteDebugLine($"Force Overwrite:\t{forceOverwrite}\nfullPath: {fullPath}");
+                write = MyConsole.ReadBool($"l'incantesimo {Name} è già stato salvato nella lista {clas} e tu non mi hai indicato di forzare la sovrascrittura, lo vuoi sovrascrivere?", ConsoleColor.Red);
+            }
+            if (write)
+            {
+                try
+                {
+                    File.WriteAllText(fullPath, ToMarkdown());
+                    MyConsole.WriteLine($"ho scritto il file {ToKebabCase()} nella cartella {clas}\n({fullPath})", ConsoleColor.Yellow);
+                    count++;
+                }
+                catch (Exception e)
+                {
+                    MyConsole.WriteDebugLine($"errore {e.Message} in PrintToFile() per stampare il file incantesimo originale\n{e.StackTrace}");
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public string ToKebabCase()
+    {
+        string stripedName = Name.Replace("'", "");
+        if (string.IsNullOrWhiteSpace(stripedName))
             return string.Empty;
 
-        var parts = originalName
+        var parts = stripedName
             .ToLower()
             .Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
@@ -189,7 +234,7 @@ public class SpellClass
 
     public string ToObsidianReference()
     {
-        string ret = $"![[tutti/{ToCamelCase(Name).ToLower()}]]";
+        string ret = $"![[tutti/{ToKebabCase().ToLower()}]]";
         return ret;
     }
 }
