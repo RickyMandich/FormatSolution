@@ -14,5 +14,37 @@
       "Chierico"
     ],
     "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Flusso di Energia Negativa",
+    "Level": 5,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, M (un osso rotto e un quadrato di seta nera o di altro colore purch\u00E8 scuro)",
+    "Duration": "Istantanea",
+    "Description": "Lanci nastri di energia negativa contro una creatura visibile entro il raggio d\u0027azione. A meno che il bersaglio non sia un non morto, deve effettuare un tiro salvezza su Costituzione (se il pezzo di stoffa non \u00E8 nero il bersaglio ottiene vantaggio), subendo 5d12 danni necrotici se fallisce il tiro salvezza, o la met\u00E0 di questi danni se lo supera. Un bersaglio ucciso da questi danni si rianima come uno zombi all\u0027inizio del tuo turno successivo. Lo zombi insegue qualsiasi creatura visibile che gli sia pi\u00F9 vicina. Le statistiche dello zombi sono nel Manuale dei Mostri.\nSe prendi di mira un non morto con questo incantesimo, il bersaglio non effettua un tiro salvezza (se il pezzo di stoffa non \u00E8 nero il bersaglio deve effettuare lo stesso il tiro salvezza). Invece, tira 5d12. Il bersaglio ottiene met\u00E0 del totale come punti ferita temporanei.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Snervamento",
+    "Level": 5,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S",
+    "Duration": "Concetrazione, fino a 1 minuto",
+    "Description": "Un tentacolo di oscurit\u00E0 nera come l\u0027inchiostro si protende da te, toccando una creatura entro gittata che puoi vedere per risucchiarne la vita. Il bersaglio deve effettuare un tiro salvezza su Destrezza.\nSe supera il tiro salvezza, il bersaglio subisce 2d8 danni necrotici e l\u0027incantesimo termina.\nSe fallisce il tiro salvezza, il bersaglio subisce 4d8 danni necrotici e, finch\u00E9 l\u0027incantesimo non termina, puoi usare la tua azione in ogni tuo turno per infliggere automaticamente 4d8 danni necrotici al bersaglio.\nL\u0027incantesimo termina se usi la tua azione per fare qualsiasi altra cosa, se il bersaglio si trova fuori dalla gittata dell\u0027incantesimo o se il bersaglio ha copertura totale da te.\nOgni volta che l\u0027incantesimo infligge danni a un bersaglio, recuperi punti ferita pari alla met\u00E0 dei danni necrotici subiti dal bersaglio",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 6\u00B0 livello o superiore, il danno aumenta di 1d8 per ogni livello dello slot superiore al 5\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
   }
 ]
