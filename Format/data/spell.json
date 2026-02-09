@@ -46,5 +46,37 @@
       "Necromante"
     ],
     "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Danza Macabra",
+    "Level": 5,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S",
+    "Duration": "Concetrazione, fino a 1 ora",
+    "Description": "Fili di potere oscuro balzano dalle tue dita per trafiggere fino a cinque cadaveri di taglia Piccola o Media che riesci a vedere entro il raggio d\u0027azione. Ogni cadavere si rialza immediatamente e diventa non morto. Decidi se si tratta di uno zombi o di uno scheletro (le statistiche per zombi e scheletri sono nel Manuale dei Mostri) e ottiene un bonus ai tiri per colpire e per i danni pari al tuo modificatore di caratteristica da incantatore. Puoi usare un\u0027azione bonus per comandare mentalmente le creature che crei con questo incantesimo, impartendo lo stesso comando a tutte. Per ricevere il comando, una creatura deve trovarsi entro 18 metri da te. Decidi quale azione intraprenderanno le creature e dove si muoveranno durante il loro turno successivo, oppure puoi impartire un comando generico, come sorvegliare una stanza o un passaggio dai tuoi nemici. Se non impartisci alcun comando, le creature non fanno altro che difendersi dalle creature ostili. Una volta ricevuto un ordine, le creature continuano a eseguirlo fino al completamento del loro compito\nLe creature restano sotto il tuo controllo finch\u00E9 l\u0027incantesimo non termina, dopodich\u00E9 tornano inanimate",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 6\u00B0 livello o superiore, animi fino a due cadaveri aggiuntivi per ogni livello dello slot superiore al 5\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Contagio",
+    "Level": 5,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S",
+    "Duration": "7 giorni",
+    "Description": "Il tocco dell\u0027incantatore trasmette una malattia. L\u0027incantatore effettua un attacco con incantesimo in mischia contro una creatura entro la sua portata. Se colpisce, contamina la creatura con una malattia a sua scelta tra quelle descritte di seguito\nAlla fine di ogni suo turno, il bersaglio deve effettuare un tiro salvezza su Costituzione. Dopo avere fallito tre di questi tiri salvezza, gli effetti della malattia permangono per la durata dell\u0027incantesimo e la creatura smette di effettuare questi tiri salvezza. Dopo avere superato tre di questi tiri salvezza, la creatura si riprende dalla malattia e l\u0027incantesimo termina\nDal momento che questo incantesimo induce una malattia naturale nel suo bersaglio, ogni effetto che rimuove una malattia o migliora gli effetti di una malattia \u00E8 applicabile al bersaglio\n\u003E\n\u003E- Carne Putrefatta: La carne della creatura si decompone. La creatura subisce svantaggio alle prove di Carisma e vulnerabilit\u00E0 a tutti i danni\n\u003E\n\u003E- Devastazione Vischiosa: La creatura inizia a perdere sangue inesorabilmente e subisce svantaggio alle prove di Costituzione e a i tiri salvezza su Costituzione. Inoltre, ogni volta che la creatura subisce danni, \u00E8 stordita fino alla fine del suo turno succesivo\n\u003E\n\u003E- Febbre Lurida: Il corpo della creatura brucia di febbre. La creatura subisce svantaggio alle prove di Forza, ai tiri salvezza su Forza e ai tiri per colpire che utilizzano Forza\n\u003E\n\u003E- Fuoco Mentale: La mente della creatura \u00E8 febbricitante. La creatura subisce svantaggio alle prove di Intelligenza e ai tiri salvezza su Intelligenza, e si comporta come se fosse sotto gli effetti dell\u0027incantesimo confusione durante il combattimento\n\u003E\n\u003E- Infermit\u00E0 Accecante: La mente della creatura \u00E8 scossa dal dolore e i suoi occhi diventano lattiginosi. La creatura subisce svantaggio alle prove di Saggeza, ai tiri salvezza su Saggezza ed \u00E8 accecata\n\u003E\n\u003E- Tremarella: La creatura \u00E8 colta da violenti brividi, subisce svantaggio alle prove di Destrezza, ai tiri salvezza su Destrezza e ai tiri per colpire che utilizzano la Destrezza.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
   }
 ]

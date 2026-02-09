@@ -2,7 +2,7 @@
   "profiles": {
     "Format": {
       "commandName": "Project",
-      "commandLineArgs": "--debug setting add -k debug -c \"true\""
+      "commandLineArgs": "setting list"
     },
     "WSL": {
       "commandName": "WSL2",

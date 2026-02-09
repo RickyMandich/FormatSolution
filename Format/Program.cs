@@ -27,7 +27,8 @@ internal class Program
         Settings.Set("debug", false);
         var root = new RootCommand();
         var parseResult = root.Parse(args);
-        return await parseResult.InvokeAsync();
-
+        var ret = await parseResult.InvokeAsync();
+        MyConsole.WriteLine("");
+        return ret;
     }
 }
