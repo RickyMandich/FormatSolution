@@ -1,4 +1,5 @@
-﻿using Format.utils;
+﻿using Format.setting;
+using Format.utils;
 using System;
 using System.Reflection.Emit;
 using System.Xml.Linq;

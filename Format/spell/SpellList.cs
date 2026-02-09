@@ -1,4 +1,5 @@
-﻿using Format.utils;
+﻿using Format.setting;
+using Format.utils;
 using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Text.Json;
@@ -24,22 +25,16 @@ public class SpellList : List<SpellClass>
         }
     }
 
-    public new void Add(SpellClass spell)
+    public new bool Add(SpellClass spell)
     {
         base.Add(spell);
-        if (Save())
-        {
-            MyConsole.WriteLine("Incantesimo aggiunto con successo.", ConsoleColor.Green);
-        }
+        return Save();
     }
 
-    public new void RemoveAt(int index)
+    public new bool RemoveAt(int index)
     {
         base.RemoveAt(index);
-        if (Save())
-        {
-            MyConsole.WriteLine("Incantesimo rimosso con successo.", ConsoleColor.Green);
-        }
+        return Save();
     }
 
     public bool Save()
@@ -49,7 +44,7 @@ public class SpellList : List<SpellClass>
             MyConsole.WriteLine("Salvataggio in corso...", ConsoleColor.Gray);
             string jsonString = JsonSerializer.Serialize<SpellList>(this, new JsonSerializerOptions { WriteIndented = true });
             MyConsole.WriteDebugLine(jsonString);
-            File.WriteAllText(utils.Settings.env("storage", "spell.json"), jsonString);
+            File.WriteAllText(Settings.EnvPathOption("storage", "spell.json"), jsonString);
             return true;
         }
         catch (Exception e)

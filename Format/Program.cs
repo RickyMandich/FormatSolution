@@ -1,4 +1,5 @@
-﻿using Format.utils;
+﻿using Format.setting;
+using Format.utils;
 using System.IO;
 
 namespace Format;

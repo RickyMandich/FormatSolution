@@ -11,6 +11,9 @@ namespace Format
         public RootCommand() : base("a command for handle and formatting to obsidian markdown files for dnd 5e notes")
         {
             Subcommands.Add(new spell.SpellCommand());
+            Subcommands.Add(new setting.SettingCommand());
+
+
             Options.Add(debugOption = new Option<bool>("--debug", "-d")
                 {
                     Description = "indica se eseguire in debug mode",

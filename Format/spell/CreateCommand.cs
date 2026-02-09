@@ -138,14 +138,15 @@ namespace Format.spell
 
             SpellClass spell;
 
+            bool success = false;
             if (!allRequiredFilled)
             {
                 MyConsole.WriteLine("Opzioni insufficienti, entro in modalità interattiva", ConsoleColor.Yellow);
-                SpellClass.spells.Add(spell = new SpellClass(""));
+                success = SpellClass.spells.Add(spell = new SpellClass(""));
             }
             else
             {
-                SpellClass.spells.Add(spell = new SpellClass(
+                success = SpellClass.spells.Add(spell = new SpellClass(
                     name,
                     level,
                     school,
@@ -160,7 +161,10 @@ namespace Format.spell
                 ));
             }
 
-            MyConsole.WriteLine($"Incantesimo creato:\n{spell.ToMarkdown()}", ConsoleColor.Green);
+            if (success)
+            {
+                MyConsole.WriteLine($"Incantesimo creato:\n{spell.ToMarkdown()}", ConsoleColor.Green);
+            }
         }
     }
 }

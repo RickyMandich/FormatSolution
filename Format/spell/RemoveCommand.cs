@@ -38,7 +38,9 @@ internal class RemoveCommand : Command
         }
         int index = idx.Value;
         SpellClass spellToRemove = SpellClass.spells[index];
-        SpellClass.spells.RemoveAt(index);
-        Console.WriteLine($"Incantesimo '{spellToRemove.Name}' rimosso con successo.");
+        if (SpellClass.spells.RemoveAt(index))
+        {
+            Console.WriteLine($"Incantesimo '{spellToRemove.Name}' rimosso con successo.");
+        }
     }
 }

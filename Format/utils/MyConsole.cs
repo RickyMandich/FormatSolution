@@ -1,4 +1,6 @@
-﻿namespace Format.utils;
+﻿using Format.setting;
+
+namespace Format.utils;
 
 internal class MyConsole
 {

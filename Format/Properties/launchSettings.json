@@ -2,7 +2,7 @@
   "profiles": {
     "Format": {
       "commandName": "Project",
-      "commandLineArgs": "spell list -n"
+      "commandLineArgs": "--debug setting add -k debug -c \"true\""
     },
     "WSL": {
       "commandName": "WSL2",

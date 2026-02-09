@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Runtime.InteropServices;
 
-namespace Format.utils;
+namespace Format.setting;
 
 internal class Settings
 {
@@ -42,16 +42,17 @@ internal class Settings
         {
             p = Path.GetRelativePath(BaseDir, p).Replace('\\', '/');
         }
-        AddIfMissing(key, p);
+        Add(key, p);
     }
 
-    public static void AddIfMissing(string key, string value)
+    public static bool Add(string key, string value)
     {
         if (!settings.ContainsKey(key))
         {
             settings[key] = value;
-            Save();
+            return Save();
         }
+        return false;
     }
 
     public static string EnvPathOption(string key, string defaultVaule = "")
@@ -146,4 +147,10 @@ internal class Settings
             return false;
         }
     }
+
+    public static Dictionary<string, string> List()
+    {
+        return new Dictionary<string, string>(settings);
+    }
+
 }

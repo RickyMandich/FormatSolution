@@ -10,6 +10,7 @@ internal class ListCommand : Command
 {
     private readonly Option<bool> onlyNameOption;   // --name, -n
     private readonly Option<int?> indexOption;   // --index, -i
+    private readonly Option<string> searchOption; // --search, -s
     public ListCommand() : base("list", "mostra la lista degli incantesimi")
     {
         this.Options.Add(onlyNameOption = new Option<bool>("--name", "-n")
@@ -22,6 +23,12 @@ internal class ListCommand : Command
         this.Options.Add(indexOption = new Option<int?>("--index", "-i")
             {
                 Description = "mostra l'incantesimo all'indice specificato"
+            }
+        );
+
+        this.Options.Add(searchOption = new("--search", "-s")
+            {
+                Description = "filtra gli incantesimi per nome, come per effetto della regex .*<search>.*"
             }
         );
 
@@ -50,19 +57,30 @@ internal class ListCommand : Command
             }
             return;
         }
-        if(parseResult.GetValue(onlyNameOption))
+
+        if (parseResult.GetValue(onlyNameOption))
         {
-            foreach(var (index, spell) in SpellClass.spells.Index())
+            foreach (var (index, spell) in (parseResult.GetValue(searchOption) is null ? SpellClass.spells : SpellClass.spells.FindAll(s =>
+            s.Name.Contains(parseResult.GetValue(searchOption)!, StringComparison.OrdinalIgnoreCase))).Index())
             {
                 Console.WriteLine($"{index})\t{spell.Name}");
             }
-            return;
         }
-        StringBuilder sb = new StringBuilder();
-        foreach(var spell in SpellClass.spells)
+        else
         {
-            sb.AppendLine(spell.ToMarkdown());
+            StringBuilder sb = new StringBuilder();
+            foreach (var spell in parseResult.GetValue(searchOption) is null ? SpellClass.spells : SpellClass.spells.FindAll(s =>
+                s.Name.Contains(parseResult.GetValue(searchOption)!, StringComparison.OrdinalIgnoreCase)))
+            {
+                sb.AppendLine(spell.ToMarkdown());
+            }
+            Console.WriteLine(sb.ToString());
         }
-        Console.WriteLine(sb.ToString());
+
+        if(parseResult.GetValue(searchOption) is not null && SpellClass.spells.FindAll(s =>
+            s.Name.Contains(parseResult.GetValue(searchOption)!, StringComparison.OrdinalIgnoreCase)).Count == 0)
+        {
+            MyConsole.WriteLine("nessuna corrispondenza trovata");
+        }
     }
 }
