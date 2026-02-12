@@ -175,7 +175,7 @@ public class SpellClass
         int count = 0;
         foreach (string clas in classes)
         {
-            string dirFullPath = Path.Combine(outputDirectory, clas);
+            string dirFullPath = Path.Combine(outputDirectory, clas.ToLower());
             Directory.CreateDirectory(dirFullPath);
             string fullPath = Path.Combine(dirFullPath, ToKebabCase());
             fullPath = Path.ChangeExtension(fullPath, ".md");
@@ -193,7 +193,7 @@ public class SpellClass
             {
                 try
                 {
-                    File.WriteAllText(fullPath, ToMarkdown());
+                    File.WriteAllText(fullPath, clas.Equals("tutti") ? ToMarkdown() : ToObsidianReference());
                     MyConsole.WriteLine($"ho scritto il file {ToKebabCase()} nella cartella {clas}\n({fullPath})", ConsoleColor.Yellow);
                     count++;
                 }
@@ -209,33 +209,24 @@ public class SpellClass
 
     public string ToKebabCase()
     {
-        string stripedName = Name.Replace("'", "");
-        if (string.IsNullOrWhiteSpace(stripedName))
+        var strippedName = Name.Replace("'", "");
+
+        if (string.IsNullOrWhiteSpace(strippedName))
             return string.Empty;
 
-        var parts = stripedName
-            .ToLower()
-            .Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-        if (parts.Length == 0)
-            return string.Empty;
-
-        var result = "";
-
-        foreach (var part in parts)
-        {
-            if (part.Length > 0)
-            {
-                result = $"{result}{(part != parts[0] ? "-" : "")}{part}";
-            }
-        }
-
-        return result;
+        return string.Join(
+            "-",
+            strippedName
+                .ToLower()
+                .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+        );
     }
+
+
 
     public string ToObsidianReference()
     {
-        string ret = $"![[tutti/{ToKebabCase().ToLower()}]]";
+        string ret = $"![[materiale/incantesimi/tutti/{ToKebabCase().ToLower()}]]";
         return ret;
     }
 }

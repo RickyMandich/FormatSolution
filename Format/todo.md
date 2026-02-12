@@ -8,12 +8,14 @@
 - [X] ListCommand
 - [X] RemoveCommand
 - [X] WriteFileCommand
+- [ ] EditCommand
 # impostazioni
 - [X] Setting
 - [X] SettingCommand
 - [X] CreateCommand
 - [X] ListCommand
 - [ ] RemoveCommand
+- [ ] EditCommand
 # stat block
 - [ ] StatCommand
 - [ ] StatClass
@@ -22,3 +24,4 @@
 - [ ] ListCommand
 - [ ] RemoveCommand
 - [ ] WriteFileCommand
+- [ ] EditCommand

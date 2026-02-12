@@ -9,10 +9,7 @@
     "Duration": "Istantaneo",
     "Description": "L\u0027incantatore riporta in vita una creatura morta da lui toccata, purch\u00E9 non sia morta da pi\u00F9 di 10 giorni. Se l\u0027anima della creatura \u00E8 consenziente ed \u00E8 libera di riunirsi al corpo, la creatura torna in vita con 1 punto ferita.\\nQuesto incantesimo neutralizza inoltre qualsiasi veleno e cura le malattie non magiche che influenzavano la creatura al momento della morte. Tuttavia, questo incantesimo non rimuove le malattie magiche, le maledizioni e le altre afflizioni analoghe; se non vengono rimossi prima del lancio dell\u0027incantesimo, il bersaglio ne sar\u00E0 afflitto quando torner\u00E0 in vita. Questo incantesimo non pu\u00F2 riportare in vita una creatura non morta.\\nQuesto incantesimo richiude tutte le ferite mortali, ma non ripristina le parti del corpo mancanti. Se una creatura \u00E8 priva di parti del corpo o di organi essenziali per la sua sopravvivenza (come per esempio la testa), l\u0027incantesimo fallisce automaticamente.\\nIl ritorno dalla morte \u00E8 una vera e propria ordalia. Il bersaglio subisce una penalit\u00E0 di -4 a tutti i tiri per colpire, ai tiri salvezza e alle prove di caratteristica. Ogni volta che il bersaglio completa un riposo lungo, la penalit\u00E0 viene ridotta di 1 finch\u00E9 non sparisce del tutto.",
     "HigherLevels": "",
-    "Classes": [
-      "Mago",
-      "Chierico"
-    ],
+    "Classes": [],
     "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
   },
   {
@@ -78,5 +75,453 @@
       "Necromante"
     ],
     "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Spirito della Morte",
+    "Level": 4,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S, M (una carta da gioco dorata del valore di almeno 400 mo e raffigurante un avatar della morte)",
+    "Duration": "Concetrazione, fino a 1 ora",
+    "Description": "Evochi uno spirito che incarna la morte. Lo spirito si manifesta in uno spazio libero visibile entro il raggio d\u0027azione e usa il blocco statistiche dello spirito mietitore. Lo spirito scompare quando i suoi punti ferita sono ridotti a 0 o quando l\u0027incantesimo termina\nLo spirito \u00E8 un alleato per te e i tuoi compagni. In combattimento, lo spirito condivide il tuo conteggio di iniziativa e inizia il suo turno subito dopo il tuo. Obbedisce ai tuoi comandi verbali (nessuna azione richiesta da te). Se non impartisci alcun comando allo spirito, esegue l\u0027azione Schivare e usa il suo movimento per evitare il pericolo\n![[spirito-mietitore]]",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 5\u00B0 livello o superiore, usa il livello pi\u00F9 alto ovunque il livello dell\u0027incantesimo appaia nel blocco delle statistiche dello spirito mietitore.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Ombra di Moil",
+    "Level": 4,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Incantatore",
+    "Components": "V, S, M (un bulbo oculare di non morto racchiuso in una gemma del valore di almeno 150 mo)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "Ombre simili a fiamme avvolgono il tuo corpo fino al termine dell\u0027incantesimo, rendendoti completamente invisibile agli altri. Le ombre trasformano la luce fioca entro 3 metri da te in oscurit\u00E0, e la luce intensa nella stessa area in luce fioca\nFino al termine dell\u0027incantesimo, hai resistenza ai danni radianti. Inoltre, ogni volta che una creatura entro 3 metri da te ti colpisce con un attacco, le ombre si scagliano contro quella creatura, infliggendole 2d8 danni necrotici.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante",
+      "dellombra"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Inaridire",
+    "Level": 4,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V, S",
+    "Duration": "Istantanea",
+    "Description": "Una creatura entro gittata e che l\u0027incantatore sia in grado di vedere \u00E8 investita da un\u0027ondata di energia necromantica che ne prosciuga i fluidi corporei e la vitalit\u00E0. Il bersaglio deve effettuare un tiro salvezza su Costituzione. Se lo fallisce, subisce 8d8 danni necrotici, mentre se lo supera, subisce soltanto la met\u00E0 di quei danni. Questo incantesimo non ha alcun effetto sui costrutti o sui non morti\nSe l\u0027incantatore bersaglia una creatura vegetale o un vegetale magico, tale bersaglio subisce svantaggio al tiro salvezza e l\u0027incantesimo infligge il massimo dei danni. Se l\u0027incantatore bersaglia un vegetale non magico che non \u00E8 una creatura, come un albero o un arbusto, esso non effettua alcun tiro salvezza: avvizzisce e muore automaticamente",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 5\u00B0 livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 4\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Evoca non Morti",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "27m",
+    "Components": "V, S, M (un teschio dorato del valore di almeno 300 mo)",
+    "Duration": "Concentrazione, fino a 1 ora",
+    "Description": "Evochi uno spirito non morto. Si manifesta in uno spazio libero che puoi vedere entro il raggio d\u0027azione. Questa forma corporea utilizza il blocco statistiche Spirito Non Morto. Quando lanci l\u0027incantesimo, scegli la forma della creatura: Spettrale, Putrida o Scheletrica. Lo spirito assomiglia a una creatura non morta con la forma scelta, che determina alcuni tratti nel suo blocco statistiche. La creatura scompare quando scende a 0 punti ferita o quando l\u0027incantesimo termina\nLa creatura \u00E8 un\u0027alleata per te e i tuoi compagni. In combattimento, la creatura condivide il tuo conteggio di iniziativa, ma svolge il suo turno immediatamente dopo il tuo. Obbedisce ai tuoi comandi verbali (nessuna azione richiesta da te). Se non impartisci alcun comando, esegue l\u0027azione Schivare e usa il suo movimento per evitare il pericolo",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 4\u00B0 livello o superiore, usa il livello pi\u00F9 alto ovunque il livello dell\u0027incantesimo appaia nel blocco delle statistiche.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Sudario Spirituale",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione bonus",
+    "Range": "Incantatore",
+    "Components": "V, S",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "L\u0027incantatore invoca alcuni spirti dei defunti che fluttuano attorno a lui per la durata dell\u0027incantesimo. Gli spiriti sono intangibili e invulnerabili\nFinch\u00E9 l\u0027incantesimo non termina, ogni attacco effettuato dall\u0027incantatore infligge 1d8 danni extra quando colpisce una creatura nel raggio di 3 metri da lui. I danni inflitti possono essere radiosi, necrotici o da freddo, a seconda del tipo scelto dall\u0027incantatore al momento del lancio dell\u0027incantesimo. Tutte le creature che subiscono questi danni possono non recuperare punti ferita fino all\u0027inizio del turno successivo dell\u0027incantatore\nIn pi\u00F9, un\u0027altra creatura a sua scelta che egli riesce a vedere che inizia il suo turno entro 9 metri da lui vede la sua velocit\u00E0 ridotta di 3 metri fino all\u0027inizio del turno successivo dell\u0027incantatore",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 4\u00B0 livello o superiore, i danni aumentano di 1d8 per ogni due slot di livello superiore al 3\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Parlare con i Morti",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "3m",
+    "Components": "V, S, M (incenso bruciato)",
+    "Duration": "10 minuti",
+    "Description": "L\u0027incantatore conferisce una parvenza di vita e di intelligenza a un cadavere a sua scelta situato entro gittata, permettendogli di rispondere alle domande che egli gli pone. Il cadavere deve avere ancora una bocca e non deve essere un non morto. L\u0027incantesimo fallisce se il cadavere \u00E8 gi\u00E0 stato il bersaglio di questo incantesimo negli ultimi 10 giorni\nFinch\u00E9 l\u0027incantesimo non termina, l\u0027incantatore pu\u00F2 porre al cadavere un massimo di cinque domande. Il cadavere sa solo quello che sapeva in vita, inclusi i linguaggi che conosceva. Le risposte sono generalmente brevi, criptiche o ripetitive e il cadavere non \u00E8 obbligato in alcun modo a fornire risposte sincere se l\u0027incantatore gli \u00E8 ostile o se lo riconosce come nemico. L\u0027incantesimo non riporta l\u0027anima della creatura nel suo corpo, ma soltanto lo spirito animante. Quindi il cadavere non pu\u00F2 apprendere nuove informazioni, non conosce nulla di ci\u00F2 che \u00E8 accaduto dopo la sua morte e non pu\u00F2 speculare sugli eventi futuri.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Rinascita",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S, M (diamanti del valore di 300 mo, che l\u0027incantesimo consuma)",
+    "Duration": "Istantaneo",
+    "Description": "L\u0027incantatore tocca una creatura morta entro l\u0027ultimo minuto. Quella creatura torna in vita con 1 punto ferita. Questo incantesimo non pu\u00F2 riportare in vita una creatura morta di vecchiaia e non pu\u00F2 ripristinare le eventuali parti del corpo mancanti.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Trasferimento Vitale",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V, S",
+    "Duration": "Istantanea",
+    "Description": "Sacrifichi parte della tua salute per curare le ferite di un\u0027altra creatura. Subisci 4d8 danni necrotici, che non possono essere ridotti in alcun modo, e una creatura a tua scelta che puoi vedere entro il raggio d\u0027azione recupera un numero di punti ferita pari al doppio dei danni necrotici che subisci",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 4\u00B0 livello o superiore, il danno aumenta di 1d8 per ogni livello dello slot superiore al 3\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Finzione di Morte",
+    "Level": 3,
+    "School": "Necromanzia (rituale)",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S, M (un pizzico di terra di cimitero)",
+    "Duration": "1 ora",
+    "Description": "Toccando una creatura consenziente, la si mette in uno stato catalettico indistinguibile dalla morte\nPer la durata dell\u0027incantesimo, o finch\u00E9 non usi un\u0027azione per toccare il bersaglio e interrompere l\u0027incantesimo, il bersaglio appare morto a qualsiasi ispezione esterna e agli incantesimi usati per determinarne lo stato. Il bersaglio \u00E8 accecato e inabile, e la sua velocit\u00E0 scende a 0. Il bersaglio ha resistenza a tutti i danni tranne quelli psichici. Se il bersaglio \u00E8 malato o avvelenato quando lanci l\u0027incantesimo, o diventa malato o avvelenato mentre \u00E8 sotto l\u0027effetto dell\u0027incantesimo, la malattia e il veleno non hanno effetto fino al termine dell\u0027incantesimo.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Scagliare Maledizione",
+    "Level": 3,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "L\u0027incantatore tocca una creatura che deve superare un tiro salvezza su Saggezza per non essere maledetta per la durata dell\u0027incantesimo. Quando l\u0027incantatore lancia questo incantesimo, sceglie la natura della maledizione tra le opzioni seguenti\n\\n\nL\u0027incantatore sceglie un punteggio di caratteristica. Finch\u00E9 \u00E8 maledetto, il bersaglio subisce svantaggio alle prove di caratteristica e ai tiri salvezza effettuati con quel punteggio di caratteristica\nFinch\u00E9 \u00E8 maledetto, il bersaglio subisce svantaggio ai tiri per colpire contro l\u0027incantatore\nFinch\u00E9 \u00E8 maledetto, il bersaglio deve effettuare un tiro salvezza su Saggezza all\u0027inizio di ogni suo turno. Se lo fallisce, spreca la sua azione di quel turno e non fa niente\nFinch\u00E9 il bersaglio \u00E8 maledetto, gli attacchi e gli incantesimi dell\u0027incantatore infliggono 1d8 danni necrotici extra al bersaglio\nUn incantesimo rimuovi maledizione pone fine a questo effetto. A discrezione del DM, l\u0027incantatore pu\u00F2 scegliere un effetto alternativo per la maledizione, che per\u00F2 non dovrebbe risultare pi\u00F9 potente di quelli descritti sopra. Il DM ha l\u0027ultima parola su tali effetti della maledizione",
+    "HigherLevels": "Se l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 4\u00B0 livello o superiore, la durata diventa concentrazione, fino a 10 minuti. Se usa uno slot incantesimo di 5\u00B0 livello o superiore, la durata diventa 8 ore. Se usa uno slot incantesimo di 7\u00B0 livello o superiore, la durata \u00E8 24 ore. Se usa uno slot incantesimo di 9\u00B0 livello o superiore, l\u0027incantesimo dura finch\u00E9 non viene dissolto. L\u0027uso di uno slot incantesimo di 5\u00B0 livello o superiore conferisce una durata che non richiede concentrazione.",
+    "Classes": [
+      "Mago",
+      "Warlock",
+      "Necromante",
+      "Chierico",
+      "Paladino"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Appassire e Fiorire",
+    "Level": 2,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S, M (una vite appassita attorcigliata a formare un anello)",
+    "Duration": "Istantaneo",
+    "Description": "Invochi sia la morte che la vita su una sfera di 3 metri di raggio centrata su un punto entro gittata. Ogni creatura a tua scelta in quell\u0027area deve effettuare un tiro salvezza su Costituzione, subendo 2d6 danni necrotici se fallisce il tiro salvezza, o la met\u00E0 di quei danni se lo supera. La vegetazione non magica in quell\u0027area avvizzisce\n\t\nInoltre, una creatura a tua scelta in quell\u0027area pu\u00F2 spendere e tirare uno dei suoi Dadi Vita non spesi e recuperare un numero di punti ferita pari al tiro pi\u00F9 il tuo modificatore della caratteristica di lancio di incantesimi",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 3\u00B0 livello o superiore, il danno aumenta di 1d6 per ogni slot oltre il 2\u00B0, e il numero di Dadi Vita che possono essere spesi e aggiunti al tiro di guarigione aumenta di uno per ogni slot oltre il 2\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante",
+      "Druido",
+      "Ranger"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Raggio di Affaticamento",
+    "Level": 2,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "Un raggio nero di energia logorante scaturisce dal dito dell\u0027incantatore e punta verso una creatura entro gittata. L\u0027incantatore effettua un attacco a distanza con questo incantesimo contro il bersaglio. Se lo colpisce, il bersaglio infligge soltanto la meta dei danni con gli attacchi con le armi basati sulla Forza, finch\u00E9 l\u0027incantesimo non termina\nAlla fine di ogni proprio turno, il bersaglio pu\u00F2 effettuare un tiro salvezza su Costituzione contro l\u0027incantesimo. Se lo supera, l\u0027incantesimo termina.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Riposo Involato",
+    "Level": 2,
+    "School": "Necromanzia (rituale)",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S, M (del sale e del rame sugli occhi del cadavere)",
+    "Duration": "10 giorni",
+    "Description": "L\u0027incantatore tocca un cadavere o dei resti di altro tipo. Per la durata dell\u0027incantesimo, il bersaglio \u00E8 protetto dalla decomposizione e non pu\u00F2 diventare un non morto. Inoltre, l\u0027incantesimo estende a tutti gli effetti il limite di tempo entro cui rianimare il bersaglio dalla morte, dal momento che i giorni trascorsi sotto l\u0027influenza di questo incantesimo non contano al fine di determinare il limite di tempo di incantesimi come rianimare morti.",
+    "HigherLevels": "quando lanci questo incantesimo con uno slot di 5 livello dura 4 mesi, dal 7 livello 1 anno e dal 9 finch\u00E8 non viene dissolto",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Deprivazione Sensoriale",
+    "Level": 2,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V",
+    "Duration": "1 minuto",
+    "Description": "L\u0027incantatore sceglie una creatura entro gittata e che egli sia in grado di vedere. Quella creatura deve effettuare un tiro salvezza su Costituzione. Se lo fallisce, \u00E8 privata di uno dei 5 sensi (a scelta dell\u0027incantatore) per la durata dell\u0027incantesimo. Alla fine di ogni suo turno pu\u00F2 effettuare un nuovo tiro salvezza su Costituzione. Se lo supera. l\u0027incantesimo termina",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 3\u00B0 livello o superiore, pu\u00F2 bersagliare una creatura aggiuntiva per ogni slot superiore al 2\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Raggio di Infermita",
+    "Level": 1,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S",
+    "Duration": "Istantaneo",
+    "Description": "Un raggio di nauseante energia verdastra sfreccia verso una creatura entro gittata. L\u0027incantatore effettua un attacco a distanza con questo incantesimo contro il bersaglio. Se lo colpisce, il bersaglio subisce 2d8 danni da veleno e deve effettuare un tiro salvezza su Costituzione. Se lo fallisce, \u00E8 avvelenato fino alla fine del turno successivo dell\u0027incantatore",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 2\u00B0 livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 1\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Infliggi Ferite",
+    "Level": 1,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S",
+    "Duration": "Istantanea",
+    "Description": "L\u0027incantatore effettua un attacco con incantesimo in mischia contro una creatura entro la sua portata. Se il colpo va a segno, il bersaglio subisce 3d10 danni necrotici",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 2\u00B0 livello o superiore, i danni aumentano di 1d10 per ogni livello di slot superiore al 1\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Vita Falsata",
+    "Level": 1,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Incantatore",
+    "Components": "V, S, M (una piccola quantit\u00E0 di alcol o di liqore distillato)",
+    "Duration": "1 ora",
+    "Description": "L\u0027incantatore si rafforza con un duplicato necromantico di vita e ottiene 1d4\u002B4 punti ferita temporanei per la durata dell\u0027incantesimo",
+    "HigherLevels": "quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 2\u00B0 livello o superiore, ottiene 5 punti ferita temporanei per ogni slot di livello superiore al 1\u00B0.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Incuti Paura",
+    "Level": 1,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V",
+    "Duration": "Concetrazione, fino a 1 minuto",
+    "Description": "Risvegli il senso di mortalit\u00E0 in una creatura visibile entro il raggio d\u0027azione. Costrutti e non morti sono immuni a questo effetto. Il bersaglio deve superare un tiro salvezza su Saggezza o diventare spaventato da te fino al termine dell\u0027incantesimo. Il bersaglio spaventato pu\u00F2 ripetere il tiro salvezza alla fine di ogni suo turno, terminando l\u0027effetto su se stesso in caso di successo",
+    "HigherLevels": "Quando lanci questo incantesimo usando uno slot incantesimo di 2\u00B0 livello o superiore, puoi scegliere come bersaglio una creatura aggiuntiva per ogni livello dello slot superiore al 1\u00B0. Le creature devono trovarsi entro 9 metri l\u0027una dall\u0027altra quando le scegli come bersaglio.",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Rintocco dei Morti",
+    "Level": 0,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "S",
+    "Duration": "Istantanea",
+    "Description": "L\u0027incantatore indica una creatura situata entro gittata e che egli sia in grado di vedere e il lugubre rintocco di una campana echeggia attorno ad essa per un istante. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subisce 1d8 danni necrotici. Se al bersaglio mancano uno o pi\u00F9 punti ferita, subisce invece 1d12 danni necrotici",
+    "HigherLevels": "I danni dell\u0027incantesimo aumentano di un dado quando l\u0027incantatore raggiunge il 5\u00B0 livello (2d8 o 2d12), l\u002711\u00B0 livello (3d8 o 3d12) e il 17\u00B0 livello (4d8 o 4d12)",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Salvare i Morenti",
+    "Level": 0,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S",
+    "Duration": "Istantaneo",
+    "Description": "L\u0027incantatore tocca una creatura vivente a 0 punti ferita. Quella creatura diventa stabile. Questo incantesimo non ha effetto sui costrutti o sui non morti.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Puntura Indebolitrice",
+    "Level": 0,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V, S",
+    "Duration": "Istantanea",
+    "Description": "Prosciughi la vitalit\u00E0 di una creatura che poi vedere entro gitatta\nIl bersaglio deve avere successo in un tiro salvezza su costituzione oppure prendere 1d4 danni necrotici e cadere a terra prono",
+    "HigherLevels": "i danni di questo incantesimo aumentano di 1d4 quando l\u0027incantatore arriva al 5\u00B0 livello (2d4), 11\u00B0 livello (3d4) e 17\u00B0 livello (4d4).",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Tocco Gelido",
+    "Level": 0,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "36m",
+    "Components": "V, S",
+    "Duration": "1 Round",
+    "Description": "L\u0027incantatore crea una mano scheletrica e spettrale nello spazio di una creatura entro gittata, effettuando un attacco a distanza con questo incantesimo contro quella creatura per colpirla con un flusso di gelo sepolcrale. Se viene colpito, il bersaglio subisce 1d8 danni necrotici e non pu\u00F2 recuperare punti ferita fino all\u0027inizio del turno successivo dell\u0027incantatore. Fino ad allora, la mano si avvinghia al bersaglio.Se l\u0027incantatore colpisce un bersaglio non morto, quel bersaglio subisce anche svantaggio ai suoi tiri per colpire contro l\u0027incantatore fino alla fine del turno successivo di quest\u0027ultimo",
+    "HigherLevels": "I danni di questo incantesimo aumentano di 1d8 quando l\u0027incantatore arriva al 5\u00B0 livello (2d8), 11\u00B0 livello (3d8) e 17\u00B0 livello (4d8).",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dnd5e.wikidot.com/spells:necromancy"
+  },
+  {
+    "Name": "Osteourgia",
+    "Level": 0,
+    "School": "Necromanzia",
+    "CastingTime": "1 azione",
+    "Range": "lvl * 1.5m",
+    "Components": "V, S",
+    "Duration": "Istantaneo",
+    "Description": "scegli un qualsiasi numero di oggetti entro gittata con volume massimo pari a un cubo con spigolo uguale a 1/10 della gittata. puoi usare una tua azione per rimodellare come vuoi la loro forma trasformandoli in oggetti (che esistano o no) (se usi questo trucchetto per creare dei pezzi di ossa affilati saranno considerati armi improvvisate e faranno 1d8 di danno, il numero massimo di attacchi contemporanei \u00E8 pari al tuo livello e al 10 livello ottieni anche competenza, la caratteristica da usare \u00E8 quella da incantatore) e una azione bonus per spostare le ossa come vuoi (se stai facendo attacchi hai svantaggio che scompare al livello 5 e la caratteristica da usare diventa quella da incantatore, perdi competenza se la possiedi, in ogni caso ottieni competenza al livello 10).\ngli oggetti creati in questo modo sono magici",
+    "HigherLevels": "la gittata (e di conseguenza il volume massimo degli oggetti) viene calcolato in base al livello (rispettivamente lvl * 1.5m e lvl * 15cm), se usato per attaccare perdi svantaggio al 5 livello, al 100 livello disponi di competenza negli oggetti creati o nei tiri per colpire",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "phandalverse.altervista.org/vault/materiale/incantesimi/osteourgia"
+  },
+  {
+    "Name": "Presagio",
+    "Level": 2,
+    "School": "Divinazione (rituale)",
+    "CastingTime": "1 minuto",
+    "Range": "Incantatore",
+    "Components": "V, S, M (ossa divinatorie)",
+    "Duration": "Istantanea",
+    "Description": "Lanciando bastoncini incastonati di gemme o ossa di drago, rivelando carte illustrate o usando altri strumenti di divinazione, l\u0027incantatore riceve un segno da un\u0027entit\u00E0 ultraterrena riguardo al risultato di un corso d\u0027azione specifico che intende intraprendere entro i prossimi 30 minuti. Il DM sceglie tra i seguenti presagi possibili:\n- Ventura, se l\u0027azione fornisce risultati positivi\n- Sventura, se l\u0027azione fornisce risultati negativi\n- Ventura e sventura, se l\u0027azione fornisce sia risultati positivi che negativi\n- Nulla, se l\u0027azione non fornisce risultati positivi o negativi in modo rilevante\n\t\nL\u0027incantesimo non prende in considerazione quelle potenziali circostanze che potrebbero alterare l\u0027esito, come per esempio il lancio di incantesimi aggiuntivi o la perdita o l\u0027acquisizione di un compagno.\nSe l\u0027incantatore lancia l\u0027incantesimo due o pi\u00F9 volte prima di completare il suo riposo lungo successivo, esiste una probabilit\u00E0 cumulativa del 25 per cento per ogni lancio dopo il primo di ottenere un responso casuale. Il GM effettua questo tiro in segreto.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante",
+      "Chierico",
+      "Druido"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Presagio"
+  },
+  {
+    "Name": "Blocca Persone",
+    "Level": 2,
+    "School": "Ammaliamento",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S, M (una piccola sbarra di ferro)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "L\u0027incantatore sceglie un umanoide entro gittata e che egli sia in grado di vedere. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti sar\u00E0 paralizzato per la durata dell\u0027incantesimo. Alla fine di ogni suo turno, il bersaglio pu\u00F2 effettuare un altro tiro salvezza su Saggezza. Se lo supera, l\u0027incantesimo su di esso termina.",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 3\u00B0 livello o superiore, pu\u00F2 bersagliare un umanoide aggiuntivo per ogni slot di livello superiore al 2\u00B0. Gli umanoidi devono trovarsi a non pi\u00F9 di 9 metri l\u0027uno dall\u0027altro quando l\u0027incantatore li bersaglia.",
+    "Classes": [
+      "Mago",
+      "Necromante",
+      "Warlock",
+      "Bardo",
+      "Chierico",
+      "Druido",
+      "Stregone"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Blocca_Persone"
+  },
+  {
+    "Name": "Blocca Mostri",
+    "Level": 5,
+    "School": "ammaliamento",
+    "CastingTime": "1 azione",
+    "Range": "27m",
+    "Components": "V, S, M (una piccola sbarra di ferro)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "L\u0027incantatore sceglie una creatura entro gittata e che egli sia in grado di vedere. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti sar\u00E0 paralizzato per la durata dell\u0027incantesimo. Questo incantesimo non ha effetto sui non morti. Alla fine di ogni suo turno, il bersaglio pu\u00F2 effettuare un altro tiro salvezza su Saggezza. Se lo supera, l\u0027incantesimo su di esso termina.",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo usando uno slot incantesimo di 6\u00B0 livello o superiore, pu\u00F2 bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 5\u00B0. Le creature devono trovarsi a non pi\u00F9 di 9 metri l\u0027una dall\u0027altra quando l\u0027incantatore le bersaglia.",
+    "Classes": [
+      "mago",
+      "necromante",
+      "warlock",
+      "stregone",
+      "bardo"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Blocca_Mostri"
+  },
+  {
+    "Name": "Sfera Elastica",
+    "Level": 4,
+    "School": "Invocazione",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V, S, M (una semisfera di cristallo trasparente e una semisfera corrispondente di resina)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "Una sfera di forza scintillante racchiude una creatura o un oggetto di taglia Grande o inferiore entro gittata. Una creatura non consenziente deve effettuare un tiro salvezza su Destrezza. Se lo fallisce, \u00E8 rinchiusa nella sfera per la durata dell\u0027incantesimo.\nNulla pu\u00F2 attraversare la barriera in entrata e in uscita (oggetti fisici, energia o altri effetti magici), ma una creatura all\u0027interno della sfera pu\u00F2 respirare liberamente. La sfera \u00E8 immune a tutti i danni e una creatura o un oggetto all\u0027interno non pu\u00F2 essere danneggiato dagli attacchi o dagli effetti che hanno origine all\u0027esterno; analogamente, una creatura all\u0027interno della sfera non pu\u00F2 danneggiare nulla all\u0027esterno.\nLa sfera non ha peso ed \u00E8 grande quanto basta da contenere la creatura o l\u0027oggetto al suo interno. Una creatura rinchiusa pu\u00F2 usare la sua azione per spingere la sfera dall\u0027interno e farla rotolare a met\u00E0 della propria velocit\u00E0. Analogamente, la sfera pu\u00F2 essere sollevata e mossa dalle altre creature.\nUn incantesimo disintegrazione che bersaglia la sfera la distrugge senza danneggiare ci\u00F2 che essa contiene.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Necromante"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Sfera_Elastica"
   }
 ]

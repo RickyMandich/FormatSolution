@@ -2,7 +2,7 @@
   "profiles": {
     "Format": {
       "commandName": "Project",
-      "commandLineArgs": "setting list"
+      "commandLineArgs": "spell edit"
     },
     "WSL": {
       "commandName": "WSL2",

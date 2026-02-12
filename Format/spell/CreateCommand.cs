@@ -8,9 +8,9 @@ namespace Format.spell
         private readonly Option<string> nameOption;         // --name, -n [required]
         private readonly Option<int> levelOption;           // --level, -l
         private readonly Option<string> schoolOption;       // --school, -s [required]
-        private readonly Option<string> castingTimeOption;  // --casting-time, -c
+        private readonly Option<string> castingTimeOption;  // --casting-time, -t
         private readonly Option<string> rangeOption;        // --range, -r
-        private readonly Option<string> componentsOption;   // --components, -m [required]
+        private readonly Option<string> componentsOption;   // --components, -c [required]
         private readonly Option<string> durationOption;     // --duration, -d
         private readonly Option<string> descriptionOption;  // --description, -e [required]
         private readonly Option<string> higherLevelOption;  // --higher-level, -h

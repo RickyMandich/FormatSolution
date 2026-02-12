@@ -10,7 +10,11 @@ internal class RemoveCommand : Command
     private readonly Option<int> indexOption;
     public RemoveCommand() : base("remove", "rimuovi l'impostazione all'indice indicato")
     {
-        
+        Options.Add(indexOption = new("--index", "-i")
+        {
+            Description = "l'indice dell'impostazione da rimuovere",
+            Required = true
+        });
 
         SetAction(CommandHandler);
     }

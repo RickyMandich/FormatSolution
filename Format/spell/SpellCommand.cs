@@ -11,6 +11,7 @@ namespace Format.spell
         {
             Subcommands.Add(new CreateCommand());
             Subcommands.Add(new ListCommand());
+            Subcommands.Add(new EditCommand());
             Subcommands.Add(new RemoveCommand());
             Subcommands.Add(new WriteFileCommand());
         }
