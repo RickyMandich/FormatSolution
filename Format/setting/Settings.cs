@@ -11,7 +11,7 @@ internal class Settings
 
     public static string BaseDir { get; set; } = AppDomain.CurrentDomain.BaseDirectory;
 
-    public static bool Initialize(string config = "format.config")
+    public static bool Initialize(string config = "../../../../Format/data/format.config")
     {
         path = Path.IsPathRooted(config) ? config : Path.GetFullPath(Path.Combine(BaseDir, "data", config));
         try
