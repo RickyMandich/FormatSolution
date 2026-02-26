@@ -1,11 +1,12 @@
 ﻿using System.Text;
 using System.Runtime.InteropServices;
+using Format.utils;
 
 namespace Format.setting;
 
 internal class Settings
 {
-    private static string path = "format.config";
+    internal static string path = "format.config";
     private static Dictionary<string, string> settings = new();
 
     public static string BaseDir { get; set; } = AppDomain.CurrentDomain.BaseDirectory;
@@ -92,6 +93,14 @@ internal class Settings
             }
         }
         return p;
+    }
+
+    public static bool Remove(int index)
+    {
+        string key = settings.ElementAt(index).Key;
+        settings.Remove(key);
+        MyConsole.WriteDebugLine($"impostazione {key} rimossa");
+        return false;
     }
 
     public static bool? DebugOverride { get; set; } = null;

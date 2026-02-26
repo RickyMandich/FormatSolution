@@ -523,5 +523,158 @@
       "Necromante"
     ],
     "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Sfera_Elastica"
+  },
+  {
+    "Name": "Individuazione dei Pensieri",
+    "Level": 2,
+    "School": "Divinazione",
+    "CastingTime": "1 azione",
+    "Range": "Incantatore",
+    "Components": "V, S, M (una moneta di rame)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "Per la durata dell\u0027incantesimo, l\u0027incantatore pu\u00F2 leggere i pensieri di certe creature. Quando lancia l\u0027incantesimo e come sua azione in ogni turno finch\u00E9 l\u0027incantesimo non termina, l\u0027incantatore pu\u00F2 concentrarsi su una qualsiasi creatura situata entro 9 metri da lui e che egli sia in grado di vedere. Se la creatura scelta ha un\u0027Intelligenza pari o inferiore a 3 o non parla alcun linguaggio, non pu\u00F2 essere influenzata dall\u0027incantesimo.\nAll\u0027inizio l\u0027incantatore apprende i pensieri superficiali della creatura (ci\u00F2 a cui la creatura sta pensando in quel momento). Con un\u0027azione, l\u0027incantatore pu\u00F2 trasferire la sua attenzione sui pensieri di un\u0027altra creatura oppure tentare di sondare pi\u00F9 a fondo la mente della stessa creatura. Se sonda pi\u00F9 a fondo, il bersaglio deve effettuare un tiro salvezza su Saggezza. Se lo fallisce, all\u0027incantatore vengono rivelati i suoi ragionamenti (se ne fa), il suo stato emotivo e una presenza dominante nei suoi pensieri (qualcosa di cui si preoccupa, che ama o che odia). Se ha successo, l\u0027incantesimo termina. In ogni caso, il bersaglio \u00E8 consapevole che l\u0027incantatore sta sondando la sua mente: se l\u0027incantatore non trasferisce la sua attenzione sui pensieri di un\u0027altra creatura, la creatura pu\u00F2 usare la sua azione nel proprio turno per effettuare una prova di Intelligenza contrapposta alla prova di Intelligenza dell\u0027incantatore. Se ha successo, l\u0027incantesimo termina.\nLe domande rivolte verbalmente alla creatura bersaglio plasmano naturalmente il corso dei suoi pensieri, quindi questo incantesimo \u00E8 particolarmente efficace nel corso di un interrogatorio. L\u0027incantatore pu\u00F2 anche usare questo incantesimo per individuare la presenza di creature pensanti che non \u00E8 in grado di vedere. Quando lancia l\u0027incantesimo, o come sua azione nell\u0027arco della durata, l\u0027incantatore pu\u00F2 cercare pensieri entro un raggio di 9 metri da s\u00E9. L\u0027incantesimo pu\u00F2 penetrare la maggior parte delle barriere, ma \u00E8 bloccato da 60 cm di pietra, 5 cm di metallo diverso dal piombo o una sottile lamina di piombo. L\u0027incantatore non pu\u00F2 individuare una creatura con un\u0027Intelligenza pari o inferiore a 3, o che non parli alcun linguaggio.\nUna volta individuata la presenza di una creatura in questo modo, l\u0027incantatore pu\u00F2 leggere i suoi pensieri per il resto della durata nel modo sopra descritto, anche se non \u00E8 in grado di vederla; la creatura, tuttavia, deve comunque trovarsi entro gittata.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Bardo",
+      "Stregone"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Individuazione_dei_Pensieri"
+  },
+  {
+    "Name": "Levitazione",
+    "Level": 2,
+    "School": "Trasmutazione",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S, M (un piccolo cappio di cuoio o un sottile cavo dorato piegato a forma di coppa con un lungo manico a un\u0027estremit\u00E0)",
+    "Duration": "Concentrazione, fino a 10 minuti",
+    "Description": "Una creatura o un oggetto libero a scelta dell\u0027incantatore, situato entro gittata e che egli sia in grado di vedere, si solleva verticalmente fino a 6 metri e rimane sospeso lass\u00F9 per la durata dell\u0027incantesimo. L\u0027incantesimo pu\u00F2 far levitare un bersaglio che pesa fino a 250 kg. Una creatura non consenziente che supera un tiro salvezza su Costituzione non subisce l\u0027effetto dell\u0027incantesimo.\nIl bersaglio pu\u00F2 muoversi soltanto spingendosi o aggrappandosi a un oggetto fisso o a una superficie entro portata (come per esempio una parete o un soffitto), che gli permette di muoversi come se stesse scalando quella superficie. L\u0027incantatore pu\u00F2 variare l\u0027altitudine del bersaglio di un massimo di 6 metri in ogni direzione nel proprio turno. Se il bersaglio \u00E8 l\u0027incantatore stesso, egli pu\u00F2 muoversi su o gi\u00F9 come parte del suo movimento. Altrimenti pu\u00F2 usare la sua azione per muovere il bersaglio, che deve rimanere entro gittata.\nQuando l\u0027incantesimo termina, il bersaglio scende dolcemente fluttuando fino a terra, se era ancora sospeso.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Stregone"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Levitazione"
+  },
+  {
+    "Name": "Dominare Mostri",
+    "Level": 8,
+    "School": "Ammaliamento",
+    "CastingTime": "1 azione",
+    "Range": "18m",
+    "Components": "V, S",
+    "Duration": "Concentrazione, fino a 1 ora",
+    "Description": "L\u0027incantatore tenta di soggiogare una creatura entro gittata e che egli sia in grado di vedere. Quella creatura deve superare un tiro salvezza su Saggezza, altrimenti sar\u00E0 affascinata dall\u0027incantatore per la durata dell\u0027incantesimo. Se l\u0027incantatore o le creature a lui amichevoli stanno combattendo contro la creatura, quest\u0027ultima dispone di vantaggio al tiro salvezza.\nMentre la creatura \u00E8 affascinata, l\u0027incantatore dispone di un legame telepatico con essa finch\u00E9 entrambi si trovano sullo stesso piano di esistenza. L\u0027incantatore pu\u00F2 usare questo legame telepatico per impartire comandi alla creatura finch\u00E9 \u00E8 cosciente (nessuna azione richiesta), ed essa far\u00E0 del suo meglio per obbedire. L\u0027incantatore pu\u00F2 specificare un corso d\u0027azione semplice e generico come \u0022attaca quella creatura\u0022, \u0022corri fin laggi\u00F9\u0022 o \u0022portami quell\u0027oggetto\u0022. Se la creatura porta a termine l\u0027ordine e non riceve ulteriori indicazioni da parte dell\u0027incantatore, essa si difende e si protegge al meglio delle sue capacit\u00E0.\nL\u0027incantatore pu\u00F2 usare la sua azione per assumere il controllo totale e preciso del bersaglio. Fino alla fine del turno successivo dell\u0027incantatore, la creatura effettua soltanto le azioni scelte dall\u0027incantatore e non fa niente che l\u0027incantatore non le consenta di fare. Durante questo periodo, l\u0027incantatore pu\u00F2 anche fare in modo che la creatura usi una reazione, ma per farlo dovr\u00E0 usare la sua stessa reazione.\nOgni volta che il bersaglio subisce danni, effettua un nuovo tiro salvezza su Saggezza contro l\u0027incantesimo. Se lo supera, l\u0027incantesimo termina.",
+    "HigherLevels": "Quando l\u0027incantatore lancia questo incantesimo con uno slot incantesimo di 9\u00B0 livello, la durata diventa concentrazione, fino a 8 ore.",
+    "Classes": [
+      "Mago",
+      "Bardo",
+      "Stregone",
+      "Warlock"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Dominare_Mostri"
+  },
+  {
+    "Name": "Spostamento Planare",
+    "Level": 7,
+    "School": "Invocazione",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S, M (una bacchetta di metallo biforcuta armonizzata al piano di destinazione da 250 mo)",
+    "Duration": "Istantanea",
+    "Description": "L\u0027incantatore e un massimo di otto creature consenzienti che si tengono per mano formando un cerchio vengono trasportati su un piano di esistenza diverso. L\u0027incantatore pu\u00F2 specificare la destinazione o averne una vaga descrizione, per poi apparire nel luogo esatto o nelle sue vicinanze, a discrezione del GM.\nIn alternativa, se l\u0027incantatore conosce la sequenza di simboli di un cerchio di teletrasporto su un altro piano di esistenza, questo incantesimo pu\u00F2 portarlo fino a quel cerchio. Se il cerchio di teletrasporto \u00E8 troppo piccolo per contenere tutte le creature trasportate dall\u0027incantatore, esse appariranno negli spazi liberi pi\u00F9 vicini al cerchio.\nL\u0027incantatore pu\u00F2 usare questo incantesimo per esiliare una creatura non consenziente su un altro piano. Sceglie una creatura entro la sua portata ed effettua un attacco con incantesimo in mischia contro di essa. Se colpisce, la creatura deve effettuare un tiro salvezza su Carisma. Se lo fallisce. viene trasportata in un luogo casuale sul piano di esistenza specificato dall\u0027incantatore. Una creatura trasportata in questo modo dovr\u00E0 trovare da sola il modo di tornare sul piano di esistenza attuale dell\u0027incantatore.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Druido",
+      "Chierico",
+      "Stregone",
+      "Warlock"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Spostamento_Planare"
+  },
+  {
+    "Name": "Interdizione alle Lame",
+    "Level": 0,
+    "School": "Abiurazione",
+    "CastingTime": "1 azione",
+    "Range": "Incantatore",
+    "Components": "V, S",
+    "Duration": "1 round",
+    "Description": "L\u0027incantatore protende la mano in avanti e traccia un simbolo di interdizione nell\u0027aria. Fino alla fine del suo turno successivo, l\u0027incantatore dispone di resistenza ai danni contundenti, perforanti e taglienti inferti dagli attacchi con le armi.",
+    "HigherLevels": "",
+    "Classes": [
+      "Bardo"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Interizione_alle_lame"
+  },
+  {
+    "Name": "Luci Danzanti",
+    "Level": 0,
+    "School": "Invocazione",
+    "CastingTime": "1 azione",
+    "Range": "36m",
+    "Components": "V, S, M (un frammento di fosforo, di legno di faggio o una lucciola)",
+    "Duration": "Concentrazione, fino a 1 minuto",
+    "Description": "L\u0027incantatore crea fino a quattro luci delle dimensioni di una torcia, facendole apparire come lanterne, torce o globi luminosi che fluttuano nell\u0027aria per la durata dell\u0027incantesimo. L\u0027incantatore pu\u00F2 anche fondere le quattro luci in un\u0027unica forma luminosa vagamente umanoide di taglia Media. Qualunque sia la forma scelta, ogni luce proietta luce fioca entro un raggio di 3 metri.\nCome azione bonus nel suo turno, l\u0027incantatore pu\u00F2 muovere le luci di un massimo di 18 metri fino a un nuovo punto entro gittata. Ogni luce deve trovarsi entro 6 metri da un\u0027altra luce creata da questo incantesimo; una luce si spegne se esce dalla gittata dell\u0027incantesimo.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Stregone",
+      "Bardo"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Luci_Danzanti"
+  },
+  {
+    "Name": "Mano Magica",
+    "Level": 0,
+    "School": "Evocazione",
+    "CastingTime": "1 azione",
+    "Range": "9m",
+    "Components": "V, S",
+    "Duration": "1 minuto",
+    "Description": "Una mano spettrale fluttuante appare in un punto a scelta dell\u0027incantatore situato entro gittata. La mano permane per la durata dell\u0027incantesimo o finch\u00E9 l\u0027incantatore non la congeda con un\u0027azione. La mano svanisce se si trova a pi\u00F9 di 9 metri dall\u0027incantatore o se quest\u0027ultimo lancia di nuovo questo incantesimo.\nL\u0027incantatore pu\u00F2 usare la sua azione per controllare la mano. Pu\u00F2 usarla per maneggiare un oggetto, aprire una porta o un contenitore che non sia chiuso a chiave, estrarre o riporre un oggetto da un contenitore aperto o versare il contenuto di una fiala. Pu\u00F2 muovere la mano di un massimo di 9 metri ogni volta che la usa.\nLa mano non pu\u00F2 attaccare, attivare oggetti magici o trasportare pi\u00F9 di 5 kg.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Stregone",
+      "Bardo",
+      "Warlock"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Mano_Magica"
+  },
+  {
+    "Name": "Stretta Folgorante",
+    "Level": 0,
+    "School": "Invocazione",
+    "CastingTime": "1 azione",
+    "Range": "Contatto",
+    "Components": "V, S",
+    "Duration": "Istantanea",
+    "Description": "Un fulmine si sprigiona dalla mano dell\u0027incantatore per trasmettere una scarica folgorante a una creatura da lui toccata. L\u0027incantatore effettua un attacco in mischia con questo incantesimo contro il bersaglio. Se il bersaglio indossa un\u0027armatura fatta di metallo l\u0027incantatore dispone di vantaggio. Se colpisce, il bersaglio subisce 1d8 danni da fulmine e non pu\u00F2 effettuare reazioni fino all\u0027inizio del suo turno successivo.",
+    "HigherLevels": "I danni di questo incantesimo aumentano di 1d8 quando l\u0027incantatore arriva al 5\u00B0 livello (2d8), 11\u00B0 livello (3d8) e 17\u00B0 livello (4d8).",
+    "Classes": [
+      "Mago",
+      "Stregone"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Stretta_Folgorante"
+  },
+  {
+    "Name": "Camuffare s\u00E8 stesso",
+    "Level": 1,
+    "School": "Illusione",
+    "CastingTime": "1 azione",
+    "Range": "Incantatore",
+    "Components": "V, S",
+    "Duration": "1 ora",
+    "Description": "L\u0027incantatore assume un aspetto diverso (che include i suoi abiti, armatura, armi e altri oggetti personali presenti sulla sua persona) per la durata dell\u0027incantesimo o finch\u00E9 egli non usa la sua azione per terminarlo. Pu\u00F2 apparire 30 cm pi\u00F9 alto o pi\u00F9 basso e apparire magro, grasso o di corporatura normale. Non pu\u00F2 cambiare il suo tipo di corpo, quindi deve adottare una forma che usi la stessa disposizione basilare degli arti. Entro questi limiti, la natura dell\u0027illusione dipende da lui.\nI cambiamenti apportati da questo incantesimo non passano il vaglio di un\u0027ispezione fisica. Per esempio, se l\u0027incantatore usa questo incantesimo per aggiungere un cappello in testa, gli oggetti passerebbero attraverso il cappello e chiunque tocchi l\u0027incantatore non sentirebbe nulla o toccherebbe la testa e i capelli dell\u0027incantatore. Se l\u0027incantatore usa questo incantesimo per apparire pi\u00F9 magro rispetto alla realt\u00E0, quando qualcuno protende la mano per toccarlo, urta l\u0027incantatore quando la sua mano \u00E8 apparentemente ancora a mezz\u0027aria.\nPer capire che l\u0027incantatore \u00E8 camuffato, una creatura pu\u00F2 usare la sua azione per ispezionare il suo aspetto e deve superare una prova di Intelligenza (Indagare) contro la CD del tiro salvezza dell\u0027incantesimo.",
+    "HigherLevels": "",
+    "Classes": [
+      "Mago",
+      "Stregone",
+      "Bardo"
+    ],
+    "Sorgente": "https://dungeonsanddragons.fandom.com/it/wiki/Camuffare_S%C3%A9_Stesso"
   }
 ]

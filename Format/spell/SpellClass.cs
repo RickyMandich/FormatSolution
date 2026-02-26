@@ -209,7 +209,31 @@ public class SpellClass
 
     public string ToKebabCase()
     {
-        var strippedName = Name.Replace("'", "");
+        var strippedName = Name.Trim().ToLower()
+        .Replace("'", "")
+        .Replace("à", "a")
+        .Replace("è", "e")
+        .Replace("é", "e")
+        .Replace("ì", "i")
+        .Replace("í", "i")
+        .Replace("ò", "o")
+        .Replace("ó", "o")
+        .Replace("ù", "u")
+        .Replace("ú", "u")
+        .Replace("ä", "a")
+        .Replace("ö", "o")
+        .Replace("ü", "u")
+        .Replace("ñ", "n")
+        .Replace("ç", "c")
+        .Replace("â", "a")
+        .Replace("ê", "e")
+        .Replace("î", "i")
+        .Replace("ô", "o")
+        .Replace("û", "u")
+        .Replace("æ", "ae")
+        .Replace("ø", "o")
+        .Replace("å", "a")
+        .Replace("ß", "ss");
 
         if (string.IsNullOrWhiteSpace(strippedName))
             return string.Empty;

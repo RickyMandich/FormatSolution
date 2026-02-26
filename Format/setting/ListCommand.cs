@@ -23,6 +23,15 @@ internal class ListCommand : Command
 
     private async Task CommandListHandler(ParseResult parseResult, CancellationToken cancellationToken)
     {
+        if (!Settings.Initialize())
+        {
+            MyConsole.WriteLine("non sono riuscito a caricare le impostazioni", ConsoleColor.Red);
+            return;
+        }
+        else
+        {
+            MyConsole.WriteLine($"impostazioni caricate correttamente dal file \"{Settings.path}\"", ConsoleColor.Green);
+        }
         var result = Settings.List();
         if (result != null)
         {
